@@ -20,7 +20,7 @@ public class CarTest {
 //			color = "yellow";
 //		}
 //		
-//		Assert.assertEquals(color, "red", "Verify color name by fruit name");
+		Assert.assertEquals("", "red", "Verify color name by fruit name");
 //		
 		
 	}
