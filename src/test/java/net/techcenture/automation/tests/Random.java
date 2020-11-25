@@ -14,6 +14,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Random {
 	
 	
+	public void testCommit() {
+		
+	}
+	
 	@Test
 	public void get_all_links_from_a_webpage() throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
