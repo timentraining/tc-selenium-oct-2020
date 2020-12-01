@@ -12,7 +12,6 @@ import net.techcenture.core.InitDriver;
 public class SelectObjectDemo extends InitDriver{
 
 	
-	
 	@Test
 	public void actions__keys() throws InterruptedException {
 		
