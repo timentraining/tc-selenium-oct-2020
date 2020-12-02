@@ -11,16 +11,16 @@ public class Profile extends InitDriver{
 	
 	@Test
 	public void ProfileTest1() {
-		driver.get("http://automationpractice.com");
+		driver.get("http://www.cnn.com");
 		//
 		//
 	}
 	
 	
 	
-	@Test
+	@Test(groups = {"smoke"})
 	public void ProfileTest2() {
-		driver.get("http://automationpractice.com");
+		driver.get("http://www.cnn.com");
 		//
 		//
 	}
@@ -28,9 +28,9 @@ public class Profile extends InitDriver{
 	
 	
 	
-	@Test
+	@Test(groups = {"smoke"})
 	public void ProfileTest3() {
-		driver.get("http://automationpractice.com");
+		driver.get("http://www.cnn.com");
 		//
 		//
 	}
@@ -40,7 +40,7 @@ public class Profile extends InitDriver{
 	
 	@Test
 	public void ProfileTest4() {
-		driver.get("http://automationpractice.com");
+		driver.get("http://www.cnn.com");
 		//
 		//
 	}

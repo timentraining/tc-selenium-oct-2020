@@ -8,7 +8,7 @@ public class Login extends InitDriver{
 	
 	
 	
-	@Test
+	@Test(groups = {"smoke","high-priority"})
 	public void LoginTest1() {
 		driver.get("http://automationpractice.com");
 		//
@@ -17,7 +17,7 @@ public class Login extends InitDriver{
 	
 	
 	
-	@Test
+	@Test(groups = {"high-priority"})
 	public void LoginTest2() {
 		driver.get("http://automationpractice.com");
 		//
@@ -37,9 +37,9 @@ public class Login extends InitDriver{
 	
 	
 	
-	@Test
-	public void LoginTest4() {
-		driver.get("http://automationpractice.com");
+	@Test(groups = "low-priority", dataProvider = "myData", dataProviderClass = DataProviderClass.class)
+	public void LoginTest4(String str) {
+		driver.get("http://"+str+".com");
 		//
 		//
 	}

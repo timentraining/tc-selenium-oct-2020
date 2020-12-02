@@ -25,7 +25,7 @@ public class Product extends InitDriver{
 	
 	
 	
-	@Test
+	@Test(groups = {"smoke"})
 	public void ProductTest3() {
 		driver.get("http://automationpractice.com");
 		//

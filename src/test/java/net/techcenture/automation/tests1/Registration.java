@@ -37,7 +37,7 @@ public class Registration extends InitDriver{
 	
 	
 	
-	@Test
+	@Test(groups = {"smoke"})
 	public void RegistrationTest3() {
 		driver.get("http://automationpractice.com");
 		//

@@ -8,7 +8,7 @@ public class Purchase extends InitDriver{
 	
 	@Test
 	public void PurchaseTest1() {
-		driver.get("http://automationpractice.com");
+		driver.get("http://google.com");
 		//
 		//
 	}
@@ -17,7 +17,7 @@ public class Purchase extends InitDriver{
 	
 	@Test
 	public void PurchaseTest2() {
-		driver.get("http://automationpractice.com");
+		driver.get("http://google.com");
 		//
 		//
 	}
@@ -27,7 +27,7 @@ public class Purchase extends InitDriver{
 	
 	@Test
 	public void PurchaseTest3() {
-		driver.get("http://automationpractice.com");
+		driver.get("http://google.com");
 		//
 		//
 	}
@@ -37,7 +37,7 @@ public class Purchase extends InitDriver{
 	
 	@Test
 	public void PurchaseTest4() {
-		driver.get("http://automationpractice.com");
+		driver.get("http://google.com");
 		//
 		//
 	}
@@ -45,7 +45,7 @@ public class Purchase extends InitDriver{
 
 	@Test
 	public void PurchaseTest5() {
-		driver.get("http://automationpractice.com");
+		driver.get("http://google.com");
 		//
 		//
 	}
@@ -54,7 +54,7 @@ public class Purchase extends InitDriver{
 
 	@Test
 	public void PurchaseTest6() {
-		driver.get("http://automationpractice.com");
+		driver.get("http://google.com");
 		//
 		//
 	}

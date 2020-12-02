@@ -52,7 +52,7 @@ public class Other extends InitDriver{
 	
 	
 
-	@Test
+	@Test(groups = {"smoke"})
 	public void OtherTest6() {
 		driver.get("http://automationpractice.com");
 		//
