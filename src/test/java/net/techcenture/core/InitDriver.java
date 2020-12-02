@@ -4,8 +4,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -13,15 +15,26 @@ public class InitDriver {
 	
 	protected WebDriver driver;
 	
-	@BeforeSuite
-	public void invoke_browser() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+	@Parameters({"browserType"})
+	@BeforeMethod
+	public void invoke_browser(String browserType) {
+		
+		if(browserType.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		}else if(browserType.equalsIgnoreCase("ie")) {
+			WebDriverManager.iedriver().setup();
+			driver = new InternetExplorerDriver();
+		
+		}
+		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		
+		
 	}
 	
-	@AfterSuite
+	@AfterMethod
 	public void close_browser() {
 		driver.close();
 	}

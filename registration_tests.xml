@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+ 
+<suite name="All Registration Tests" verbose="1" >
+  <test name="Registration test in chrome browser"   >
+  	<parameter name="browserType" value="chrome"/> 
+	<parameter name="firstname" value="Mary"/>  
+	<parameter name="lastname" value="Jane"/> 
+	<parameter name="userid" value="m.jane2020"/> 
+    <classes>
+      <class name="net.techcenture.automation.tests1.Registration" />
+   </classes>
+ </test>
+</suite>
