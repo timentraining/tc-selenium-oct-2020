@@ -11,6 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import net.techcenture.core.InitDriver;
+import net.techcenture.framework.Utility;
 
 public class HtmlTableDemo extends InitDriver {
 	
@@ -54,7 +55,7 @@ public class HtmlTableDemo extends InitDriver {
         	percentages.add(converted_percentage);
      
         }
-        int index = percentages.indexOf(Collections.min(percentages));
+        int index = new Utility().get_the_index_of_min_number(percentages);
         driver.findElement(By.xpath("//tr[child::td]["+(index+1)+"]//td[3]")).findElement(By.tagName("input")).click();
 
         

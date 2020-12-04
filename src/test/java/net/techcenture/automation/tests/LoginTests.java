@@ -11,6 +11,8 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import net.techcenture.core.InitDriver;
+import net.techcenture.framework.Excel;
+import net.techcenture.framework.UI;
 
 public class LoginTests extends InitDriver{
 	
@@ -19,15 +21,13 @@ public class LoginTests extends InitDriver{
 	
 	@Test
 	public void Login_with_valid_userid_but_invalid_password() {
-		
-	
-		
 //		Go to http://www.automationpractice.com
 		driver.get("http://www.automationpractice.com");
 		
 //		Click Sign in button from top right corner of the page
 		WebElement signInBUtton = driver.findElement(By.xpath("//a[@class='login']"));
 		signInBUtton.click();
+		
 		
 //		Enter valid email address 'abc213@mailinator.com' in email address text field of right side
 		driver.findElement(By.xpath("//input[@name='email' and @id='email']")).sendKeys("abc213@mailinator.com");
@@ -37,6 +37,38 @@ public class LoginTests extends InitDriver{
 //		Click 'Sign in' button
 //		Verify error message displayed 'There is 1 error'
 //		Verify error message displayed 'Authentication failed.'
+	}
+	
+	
+	@Test
+	public void Login_with_valid_userid_but_invalid_password_using_our_framework() {
+		
+		UI ui = new UI(driver);
+		
+//		Go to http://www.automationpractice.com
+		ui.open_url("http://www.automationpractice.com");
+		
+//		Click Sign in button from top right corner of the page
+		ui.click_element_by_xpath("//a[@class='login']");
+		
+//		Enter valid email address 'abc213@mailinator.com' in email address text field of right side
+		ui.sendkeys_by_xpath("//input[@name='email' and @id='email']", "abc213@mailinator.com");
+		
+//		Enter invalid password 'myinvalidpwd' in password text field
+		ui.sendkeys_by_xpath("//input[@id='passwd' and @name='passwd' and @data-validate='isPasswd']", "myinvalidpwd");
+//		Click 'Sign in' button
+//		Verify error message displayed 'There is 1 error'
+//		Verify error message displayed 'Authentication failed.'
+		
+		
+		//
+		//
+		//
+		//
+		//
+		//
+		//
+		//
 			
 			
 		
