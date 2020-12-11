@@ -34,6 +34,13 @@ public class UsingFramework extends TestBase{
 	}
 	
 	@Test
+	public void search_test_1() {
+		webui.launch("http://automationpractice.com/");
+		webui.click_element_by_className("login");
+		
+	}
+	
+	@Test
 	public void simpleTest2() {
 		webui.launch("http://automationpractice.com/");
 		webui.click_element_by_className("login");

@@ -8,6 +8,7 @@
 	<class name="net.techcenture.seleniumdemo.UsingFramework">
 	<methods>
 	<include name="simpleTest"></include>
+	<include name="search_test_1"></include>
 	</methods>
 	</class>
 	</classes>
