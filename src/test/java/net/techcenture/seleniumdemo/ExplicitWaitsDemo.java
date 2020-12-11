@@ -18,9 +18,9 @@ public class ExplicitWaitsDemo extends InitDriver{
 		
 	
 		driver.get("http://www.leafground.com/pages/TextChange.html");
-		WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		boolean buttonHasTextIsClickMe = webDriverWait.until(ExpectedConditions.textToBePresentInElementLocated(By.id("btn"), "Click ME!"));
-		System.out.println(buttonHasTextIsClickMe);
+		//WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		//boolean buttonHasTextIsClickMe = webDriverWait.until(ExpectedConditions.textToBePresentInElementLocated(By.id("btn"), "Click ME!"));
+		//System.out.println(buttonHasTextIsClickMe);
 		
 		
 		
@@ -30,9 +30,9 @@ public class ExplicitWaitsDemo extends InitDriver{
 		
 		driver.get("http://www.leafground.com/pages/appear.html");
 		
-		WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		WebElement btn = webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("btn")));
-		System.out.println("Btn text: "+ btn.getText());
+		//WebDriverWait webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		//WebElement btn = webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("btn")));
+		//System.out.println("Btn text: "+ btn.getText());
 		//btn
 		
 	}
