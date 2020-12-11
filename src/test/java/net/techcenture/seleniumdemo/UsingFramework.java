@@ -4,7 +4,6 @@ import org.testng.annotations.Test;
 
 import net.timentraining.core.TestBase;
 import net.timentraining.core.io.Excel;
-import net.timentraining.core.mail.Gmail;
 import net.timentraining.core.util.TestUtility;
 
 public class UsingFramework extends TestBase{
@@ -30,6 +29,12 @@ public class UsingFramework extends TestBase{
 	
 	@Test
 	public void simpleTest() {
+		webui.launch("http://automationpractice.com/");
+		
+	}
+	
+	@Test
+	public void simpleTest2() {
 		webui.launch("http://automationpractice.com/");
 		webui.click_element_by_className("login");
 		
