@@ -35,8 +35,8 @@ public class InitDriver {
 //		int y = driver.manage().window().getPosition().getY();
 //		System.out.println(x);
 //		System.out.println(y);
-		Point point = new Point(-1907, 43);
-		driver.manage().window().setPosition(point);
+//		Point point = new Point(-1907, 43);
+//		driver.manage().window().setPosition(point);
 		
 	}
 	

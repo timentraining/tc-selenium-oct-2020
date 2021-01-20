@@ -3,8 +3,7 @@
 <suite name="All Tests" verbose="1" >
   <test name="login tests"   >
     <classes>
-      <class name="demo.testng.Annotations2" />
-      <class name="demo.testng.Annotations3" />
+      <class name="net.techcenture.automation.tests.LoginTests" />
    </classes>
  </test>
 </suite>

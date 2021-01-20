@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Parameter demo suite" verbose="1">
+ 
+	<test name="parameter test with chrome browser">
+	<parameter name="typeoftrip" value="oneway"></parameter>
+	<parameter name="returndate" value=""></parameter>
+	<parameter name="numberofpassenger" value="5"></parameter>
+	<parameter name="departuredate" value="01/23/2021"></parameter>
+	
+	
+		<classes>
+		<class name="demo.tectcenture.parameters.FlightReservationTests">
+		<methods>
+		<include name="reserve_a_flight_with_1_pass_and_oneway"></include>
+		</methods>
+		</class>
+		</classes>
+
+	</test>
+</suite>

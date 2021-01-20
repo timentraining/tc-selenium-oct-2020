@@ -40,7 +40,7 @@ public class UsingFramework extends TestBase{
 		
 	}
 	
-	@Test
+	@Test(groups = {"smoke"})
 	public void simpleTest2() {
 		webui.launch("http://automationpractice.com/");
 		webui.click_element_by_className("login");

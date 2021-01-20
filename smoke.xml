@@ -3,17 +3,16 @@
 <suite name="Smoke Tests" verbose="1">
  
 	<test name="Smoke test with chrome browser">
-	
-	<classes>
-	<class name="net.techcenture.seleniumdemo.UsingFramework">
-	<methods>
-	<include name="simpleTest"></include>
-	<include name="search_test_1"></include>
-	</methods>
-	</class>
-	</classes>
-		
-	
+	<groups>
+    <run>
+     
+      <include name="smoke"  />
+    </run>
+  </groups>
+<packages>
+<package name="net.techcenture.*"></package>
+</packages>
+
 
 	</test>
 </suite>
